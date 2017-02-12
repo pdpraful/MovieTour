@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlotTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-mu-Yxv">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-YC-zcr">
+                            <rect key="frame" x="28" y="30" width="545" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="545" id="oDv-3z-x3g"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Title">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="34" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQK-c0-Les">
+                            <rect key="frame" x="28" y="85" width="359" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="359" id="HVF-yJ-hVA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.03346670819" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jux-6H-Loa">
+                            <rect key="frame" x="28" y="119" width="545" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="4Ic-rP-qn5"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="jux-6H-Loa" firstAttribute="top" secondItem="OQK-c0-Les" secondAttribute="bottom" constant="13" id="1nm-9H-WAr"/>
+                        <constraint firstItem="jux-6H-Loa" firstAttribute="leading" secondItem="OQK-c0-Les" secondAttribute="leading" id="MiG-Fu-A1t"/>
+                        <constraint firstItem="Sop-YC-zcr" firstAttribute="top" secondItem="Gkg-mu-Yxv" secondAttribute="top" constant="30" id="fNX-9P-rfU"/>
+                        <constraint firstItem="OQK-c0-Les" firstAttribute="top" secondItem="Sop-YC-zcr" secondAttribute="bottom" constant="15" id="fZT-Go-ci4"/>
+                        <constraint firstAttribute="trailing" secondItem="jux-6H-Loa" secondAttribute="trailing" constant="27" id="upm-mG-ngT"/>
+                        <constraint firstItem="OQK-c0-Les" firstAttribute="leading" secondItem="Sop-YC-zcr" secondAttribute="leading" id="vWM-fu-dM8"/>
+                        <constraint firstItem="Sop-YC-zcr" firstAttribute="leading" secondItem="Gkg-mu-Yxv" secondAttribute="leading" constant="28" id="yZt-DJ-4jj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Gkg-mu-Yxv" secondAttribute="bottom" id="i75-TU-Nri"/>
+                <constraint firstAttribute="trailing" secondItem="Gkg-mu-Yxv" secondAttribute="trailing" id="mrZ-21-AFr"/>
+                <constraint firstItem="Gkg-mu-Yxv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rCt-qq-SkD"/>
+                <constraint firstItem="Gkg-mu-Yxv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="z83-4q-407"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

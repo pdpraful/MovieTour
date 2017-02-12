@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mMg-vM-LZW" customClass="VideoPlayerViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mMg-vM-LZW" id="OPw-ac-MLx">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3Q-c3-tuu" customClass="YTPlayerView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="v3Q-c3-tuu" secondAttribute="bottom" constant="-8" id="5rT-bv-rYI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="v3Q-c3-tuu" secondAttribute="trailing" constant="-8" id="9lL-CK-Moh"/>
+                    <constraint firstItem="v3Q-c3-tuu" firstAttribute="top" secondItem="OPw-ac-MLx" secondAttribute="topMargin" constant="-8" id="R9P-Nt-oFP"/>
+                    <constraint firstItem="v3Q-c3-tuu" firstAttribute="leading" secondItem="OPw-ac-MLx" secondAttribute="leadingMargin" constant="-8" id="thb-on-Qkc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="v3Q-c3-tuu" secondAttribute="trailing" constant="-8" id="wFL-pd-fuL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="youtubePlayer" destination="v3Q-c3-tuu" id="V3E-vU-RBm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
